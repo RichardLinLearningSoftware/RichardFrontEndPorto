@@ -4,7 +4,7 @@ html{
 
 @font-face {
     font-family: jetmono;
-    src: url('../assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    src: url(../public/assets/fonts/JetBrainsMono-Regular.ttf);
 }
 
 *{
