@@ -22,7 +22,7 @@ directionalLight.lookAt(0,0,0);
 scene.add(camera, light, directionalLight);
 
 const loader = new GLTFLoader();
-const computerHeadGLB = await loader.loadAsync( '/assets/models/tvHead.gltf' );
+const computerHeadGLB = await loader.loadAsync( `${import.meta.env.BASE_URL}assets/models/tvHead.gltf` );
 const computerHead = computerHeadGLB.scene;
 computerHead.position.set(0, -0.5,0)
 computerHead.rotation.y = degToRad(180);
